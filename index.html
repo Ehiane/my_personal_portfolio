@@ -1,0 +1,290 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ehiane's Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel = "shortcut icon" type="image" href="./images/Ehiane_AI  (8).JPG">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/8badd978b9.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <!---------------------------- HEADER S----------------------------------------------------------------------------->
+    <div id="header">
+        <!-- CONTAINER S-->
+        <div class="container">
+            <!-- NAV S-->
+            <nav>
+                <img class="logo" src="images/mylogo_red_no_background.png" alt="my Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+             <!-- NAV E-->
+             <!-- HEADER-TEXT S-->
+             <div class="header-text">
+             <p>Software Engineer</p>
+             <h1>Hi, I'm <span>Ehiane</span>.</h1>
+
+             </div>
+             <!-- HEADER-TEXT E-->
+        </div>
+        <!-- CONTAINER E-->
+    </div>
+    <!----------------------------- HEADER E-------------------------------------------------------------------------->
+
+    <!------------------------------ ABOUT S------------------------------------------------------------------------------------------------------------------------------>
+    <div id="about">
+        <!-- CONTAINER S-->
+        <div class="cotainer">
+             <!-- ROW S-->
+            <div class="row">
+                <!-- about-col-1 S-->
+                <div class="about-col-1">
+                    <img src="./images/About_3.png" alt="Durag picture">
+                </div>
+                <!-- about-col-1 E-->
+
+                <!-- about-col-2 S-->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm an International Sophmore Student from Nigeria, <br> who is currently pusruing a Bachelor of Science degree in Compter Science
+                    at Washington State University. <br>
+                    I have a current GPA of 3.7 
+                    and programming experience in 6 Programming/Scripting Languages: HTML , CSS, JAVASCRIPT, PYTHON, C and C++.<br>I am currently searching for internship 
+                    opportunities in software and web development 
+                    and am open to any form of programming-related experience.</p>
+
+                    <!-- tab-titles S-->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!-- tab-titles E-->
+                    <!-- tab-contents S-->
+                         <!-- Skills -->
+                    <div class="tab-contents active-tab" id="skills"> 
+                        <ul>
+                            <li><span>Object Oriented Programming</span><br>Ability to integrate inheritance and polymorphism to tasks.</li>
+                            <li><span>Web Development</span><br>Creation of fully responsive webpages with working forms.</li>
+                            <li><span>Game Development</span><br>Using SFML Library with C and C++</li>
+                        </ul>
+                    </div>
+                        <!-- Experience -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Co-Built Tetris game using C++.</li>
+                            <li><span>2019 - Current</span><br> Built several responsive webpages with HTML, CSS and JAVASCRIPT.</li>
+                        </ul>
+                    </div>
+                        <!-- Education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>Web Design Training at HIIT.inc</li>
+                            <li><span>2020-2021</span><br>Python: Object Oriented programming at Pan-Atlantic University.</li>
+                            <li><span>2021 - Current</span><br>Python: functional Programming, C/C++: impertive and Object Oriented Programming.</li>
+                        </ul>
+                    </div>
+                    <!-- tab-contents S-->
+                </div>
+                <!-- about-col-2 E-->
+            </div>
+            <!-- ROW E-->
+        </div>
+         <!-- CONTAINER E-->
+    </div>
+    <!------------------------------------ ABOUT E------------------------------------------------------------------------------------------------------->
+
+    <!---------------------------------------- SERVICES S ------------------------------------------------------->
+    <div id="services">
+        <!------------CONTAINER S---------->
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <!----------SERVICES-LIST S------->
+            <div class="services-list">
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Over the years, I have gained experience in Web Design from A Web Design Course in <a href="https://www.hiitplc.com/">HIIT</a> ,tutorials on Youtube and personal practice.
+                        Using the Core markup and scripting Languages(i.e HTML, CSS and JAVASCRIPT), I have been able to manufacture different themes of commercial/ personal websites that can be found below.
+                    </p>
+                     <a href="https://github.com/Ehiane?tab=repositories" target="_blank">Link to Repository</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Game Development</h2>
+                    <p>My most recent attempt at game development was with my friends. We were able to replicate Tetris for our Data Strctures final project. We made use of the SFML library in C++ to achieve the graphical side of the project. We also used important programming concepts like Polymorphism and Inheritance during the making of the game. check the video on how we did it down below.</p>
+                     <a href="https://youtu.be/eFyxCHHXRD0" target="_blank">Link to Youtube Video</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Machine Learning</h2>
+                    <p>This is an aspect of programming I am currently intrested in. I currently have no experience in it but I am eager to learn about it and will update this tab when I do so.</p>
+                     <a href="https://www.ibm.com/topics/machine-learning" target="_blank">Learn more</a>
+                </div>
+
+            </div>
+            <!----------SERVICES-LIST E------->
+        </div>
+        <!-- -----------CONTAINER E---------->
+    </div>
+    <!---------------------------------------- SERVICES E ------------------------------------------------------->
+
+
+    <!----------------------------------------PORTFOLIO S--------------------------------------------------------------------->
+    <div id="portfolio">
+        <!----------CONTAINER S---------->
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+
+             <!----------WORKLIST S---------->
+            <div class="work-list">
+                <!-- PISHUR- Image Search App -->
+                <div class="work">
+                    <img src="./images/Pishur_Web_Page_1.png" alt="Image-Search-App">
+                    <div class="layer">
+                        <h3>Pishur</h3>
+                        <p>An Image Search App<br><br>built with Unsplah's API,HTML,CSS & JAVASCRIPT</p>
+                        <a href="https://pishur.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                 <!-- Banking Automation System -->
+                <div class="work">
+                    <img src="./images/ATM_machine_2.jpg" alt="Banking Automation System">
+                    <div class="layer">
+                        <h3>A Basic Banking Automation system</h3>
+                        <p><br> built with Python.</p>
+                        <a href="https://github.com/Ehiane/mockBankingSystem"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                 <!-- QR Code Generator-->
+                <div class="work">
+                    <img src="./images/QR_code_scan1.jpg" alt="QR code Generator">
+                    <div class="layer">
+                        <h3>A QR Code Generator</h3>
+                        <p>built with Python</p>
+                        <a href="https://github.com/Ehiane/makeMeAQrCode"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!----------WORKLIST E---------->
+              <a href="https://github.com/Ehiane?tab=repositories" class="btn">See more</a>
+        </div>
+        <!----------CONTAINER E---------->
+    </div>
+    <!----------------------------------PORTFOLIO E-------------------------------------------->
+
+
+
+    <!-- --------------CONTACT S-------------->
+    <div id="contact">
+        <!-- CONTAINER S -->
+        <div class="container">
+            <!-- ROW S -->
+            <div class="row">
+                <!-- CONTACT-LEFT S -->
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i></i> ehis.oigiagbe@gmail.com</p>
+                    <!-- SOCIAL-ICONS S -->
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ehiane-oigiagbe-197ab0230/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/the_ehiane"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/the_ehiane/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Ehiane?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                     <!-- SOCIAL-ICONS E -->
+                     <a href="./resume/EhianeOigiagbe_Resume(Updated).pdf" download class="btn btn2">Download Resume/CV </a>
+                </div>
+                 <!-- CONTACT-LEFT E -->
+                <!-- CONTACT-RIGHT S --> 
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+
+                </div>
+                <!-- CONTACT-RIGHT E --> 
+            </div>
+              <!-- ROW E -->
+        </div>
+         <!-- CONTAINER E -->
+         <div class="copyright">
+            <p> Copyright © Ehiane Kelvin Oigiagbe. Made with <i class="fa-brands fa-html5"></i>  <i class="fa-brands fa-css3-alt"></i>  <i class="fa-brands fa-js"></i> </p>
+         </div>
+    </div>
+
+    <!-- --------------CONTACT E------------ -->
+
+
+    <!----------------------------------- JAVASCRIPT S ------------------------------------------------------------------------------------------------>
+<script>
+    //Defining the variables in order to access them via JS
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    //Definition of opentab():
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+    //Menu stuff
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+
+<!-- //WEB APP -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxF4t2rRJVbjggbyuUQMCcPxufRZt0zfigd7cn1phalC7mJofJtU659qNr7lG4UCvg7/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+     <!-------------------------------------------- JAVASCRIPT E ---------------------------------------------------------------------->
+</body>
+</html>
