@@ -210,35 +210,43 @@
                  <!-- CONTACT-LEFT E -->
                 <!-- CONTACT-RIGHT S --> 
                 <div class="contact-col">
-                    <form action="form_handler.php" method="post">
-                      <h4>Contact Form</h4>
-                      <input
-                        type="text"
-                        name="name"
-                        placeholder="Enter your name"
-                        required
-                      />
-                      <input
-                        type="Email"
-                        name="email"
-                        placeholder="Enter email address"
-                        required
-                      />
-                      <input
-                        type="text"
-                        name="subject"
-                        placeholder="Enter the subject of message"
-                        required
-                      />
-                      <textarea
-                        rows="8"
-                        name="message"
-                        placeholder="Message"
-                        required
-                      ></textarea>
-                      <button type="submit" id="blog-btn">Send Message</button>
+                    <form id="contact-form">
+                        <h4>Contact Form</h4>
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        />
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Enter email address"
+                            required
+                        />
+                        <input
+                            type="text"
+                            name="subject"
+                            placeholder="Enter the subject of message"
+                            required
+                        />
+                        <textarea
+                            rows="8"
+                            name="message"
+                            placeholder="Message"
+                            required
+                        ></textarea>
+                        <button type="submit" id="blog-btn">Send Message</button>
                     </form>
-                  </div>
+                    <!-- Pop-up implementation -->
+                    <div class="popup" id="popup">
+                        <img src="images/check_mark.png">
+                        <h2>Thank You!</h2>
+                        <p>Your details have been successfully submitted. Thanks!</p>
+                        <button type="button" onclick="closePopUp()">OK</button>
+                    </div>
+                </div>
+                
                 <!-- CONTACT-RIGHT E --> 
             </div>
               <!-- ROW E -->
@@ -253,56 +261,7 @@
 
 
     <!----------------------------------- JAVASCRIPT S ------------------------------------------------------------------------------------------------>
-<script>
-    //Defining the variables in order to access them via JS
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    //Definition of opentab():
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab")
-    }
-
-    //Menu stuff
-    var sidemenu = document.getElementById("sidemenu");
-    
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-
-
-</script>
-
-<!-- //WEB APP
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxF4t2rRJVbjggbyuUQMCcPxufRZt0zfigd7cn1phalC7mJofJtU659qNr7lG4UCvg7/exec'
-    const form = document.forms['submit-to-google-sheet']
-
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            }, 2000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script> -->
+<script src="script.js"></script>
 
      <!-------------------------------------------- JAVASCRIPT E ---------------------------------------------------------------------->
 </body>

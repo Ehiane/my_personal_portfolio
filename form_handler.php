@@ -1,4 +1,6 @@
 <?php
+$response = array(); // Create an empty response array
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST['name'];
     $visitor_email = $_POST['email'];
@@ -18,10 +20,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (mail($to, $email_subject, $email_body, $headers)) {
         // Email sent successfully
-        echo "Thank you for your message!";
+        $response['success'] = true;
     } else {
         // Email failed to send
-        echo "Oops! Something went wrong. Please try again later.";
+        $response['success'] = false;
     }
 }
+
+// Send the JSON response
+header('Content-Type: application/json');
+echo json_encode($response);
 ?>
