@@ -205,21 +205,40 @@
                         <a href="https://github.com/Ehiane?tab=repositories"><i class="fa-brands fa-github"></i></a>
                     </div>
                      <!-- SOCIAL-ICONS E -->
-                     <a href="./resume/EhianeOigiagbe_Resume(Updated).pdf" download class="btn btn2">Download Resume/CV </a>
+                     <a href="./resume/resume_current.pdf" download class="btn btn2">Download Resume/CV </a>
                 </div>
                  <!-- CONTACT-LEFT E -->
                 <!-- CONTACT-RIGHT S --> 
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                <div class="contact-col">
+                    <form action="form_handler.php" method="post">
+                      <h4>Contact Form</h4>
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                      />
+                      <input
+                        type="Email"
+                        name="email"
+                        placeholder="Enter email address"
+                        required
+                      />
+                      <input
+                        type="text"
+                        name="subject"
+                        placeholder="Enter the subject of message"
+                        required
+                      />
+                      <textarea
+                        rows="8"
+                        name="message"
+                        placeholder="Message"
+                        required
+                      ></textarea>
+                      <button type="submit" id="blog-btn">Send Message</button>
                     </form>
-
-                    <span id="msg"></span>
-
-                </div>
+                  </div>
                 <!-- CONTACT-RIGHT E --> 
             </div>
               <!-- ROW E -->
@@ -264,7 +283,7 @@
 
 </script>
 
-<!-- //WEB APP -->
+<!-- //WEB APP
   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxF4t2rRJVbjggbyuUQMCcPxufRZt0zfigd7cn1phalC7mJofJtU659qNr7lG4UCvg7/exec'
     const form = document.forms['submit-to-google-sheet']
@@ -283,7 +302,7 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
-  </script>
+  </script> -->
 
      <!-------------------------------------------- JAVASCRIPT E ---------------------------------------------------------------------->
 </body>

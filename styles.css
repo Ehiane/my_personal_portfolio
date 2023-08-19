@@ -1,3 +1,16 @@
+
+:root {
+   
+  
+    --cream: #fff3f3;
+  
+    --icon-color: #ff004f;
+  
+    --icon-color-2: #8e193e;
+}
+  
+
+
 *{
     margin: 0;
     padding: 0;
@@ -321,6 +334,79 @@ nav ul li a:hover::after{
 }
 
 
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+  }
+  
+  .contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-col div .fa {
+    font-size: 28px;
+    color: var(--icon-color);
+    margin: 10px;
+    margin-right: 30px;
+  }
+  
+  .contact-col div p {
+    padding: 0;
+  }
+  
+  .contact-col div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+  }
+  
+  .contact-col form {
+    border: 2px solid var(--icon-color);
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .contact-col form h4 {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .contact-col input,
+  .contact-col textarea {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid var(--icon-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#blog-btn {
+    display: inline;
+    text-decoration: none;
+    color: var(--icon-color);
+    border: 1px solid var(--icon-color);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    border-radius: 7px;
+  }
+  
+  #blog-btn:hover {
+    border: 1px solid var(--icon-color-2);
+    background: var(--icon-color);
+    transition: 1s;
+    color: white;
+}
 
 .social-icons{
     margin-top: 30px;
